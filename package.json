@@ -1,0 +1,13 @@
+{
+  "name": "tk-annida",
+  "version": "1.0.0",
+  "description": "TK Annida App",
+  "main": "index.js",
+  "repository": "https://github.com/anggialberto/tk-annida.git",
+  "author": "anggialberto",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {}
+}
