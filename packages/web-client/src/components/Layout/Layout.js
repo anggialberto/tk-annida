@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 function Layout({ InnerComponent }) {
+  console.log('InnerComponent', InnerComponent);
   return (
     <>
       {/*<MetaTag />*/}

@@ -1,27 +1,28 @@
 import React from "react";
 import {
-  Switch,
+  Routes as Switch,
   Route,
-  Redirect,
+  Navigate,
 } from "react-router-dom";
-import Layout from "~/components/Layout/Layout";
+import Layout from "~components/Layout/Layout";
 // import ScrollToTop from "@components/ScrollToTop/ScrollToTop";
 import routes from '~shared/routes'
 
 
 export default function AppRouter() {
+
+  console.log('ROUTE', routes)
+
   return (
     <>
       {/*<ScrollToTop />*/}
       <Switch>
         {routes.map((route, index) => (
-          <Route key={index} {...route}>
-            {
-              route.redirect ?
-                (<Redirect to={route.redirect} />) :
-                (<Layout InnerComponent={route.component} />)
-            }
-          </Route>
+          <Route key={index} {...route} element={
+            route.redirect ?
+              (<Navigate to={route.redirect} />) :
+              (<Layout InnerComponent={route.component} />)
+          } />
         ))}
       </Switch>
     </>

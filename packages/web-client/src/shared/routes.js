@@ -1,9 +1,10 @@
-// import AboutPage from "~/pages/AboutPage";
-// import GalleryPage from "~/pages/GalleryPage";
-// import LoginPage from "~/pages/LoginPage";
-// import RegisterPage from "~/pages/RegisterPage";
-// import PPDBPage from "~/pages/PPDBPage";
-// import PublicationPage from "~/pages/PublicationPage";
+import HomePage from "~pages/HomePage";
+import AboutPage from "~pages/AboutPage";
+import GalleryPage from "~pages/GalleryPage";
+import LoginPage from "~pages/LoginPage";
+import RegisterPage from "~pages/RegisterPage";
+import PPDBPage from "~pages/PPDBPage";
+import PublicationPage from "~pages/PublicationPage";
 
 import {
   LOGIN_PATH,
@@ -13,7 +14,7 @@ import {
   GALLERY_PATH,
   PPDB_PATH,
   PUBLICATION_PATH
-} from '~/constants/routes-path';
+} from '~constants/routes-path';
 
 
 const routes = [
