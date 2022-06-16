@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './Header.scss';
 import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
 
