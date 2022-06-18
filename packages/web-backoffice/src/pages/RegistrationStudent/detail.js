@@ -50,13 +50,8 @@ import {
                     </Form.Item>
                     <Button onClick={() => history.push('/school-year')} type="ghost" style={{paddingLeft: 30, paddingRight: 30}}>Back</Button>
                   </Row>
-  
-  
                 </Form>
-  
               </Card>
-  
-  
             </Col>
           </Row>
         </div>
